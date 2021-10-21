@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[SYR] Universal Fermenter</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- add to fermenter -->
+			
+				<li Class="PatchOperationAdd"> 
+				<xpath>*/ThingDef[defName = "UniversalFermenter"]/comps/li[@Class="UniversalFermenter.CompProperties_UniversalFermenter"]/processes</xpath>
+					<value>
+					
+						<li>
+						  <thingDef>MorrowRim_DagothBrandy_Brewed</thingDef>
+						  <ingredientFilter>
+							  <thingDefs>
+								  <li>MorrowRim_DagothBrandyPrecursor</li>
+							  </thingDefs>
+						  </ingredientFilter>
+						  <maxCapacity>25</maxCapacity>
+						  <processDays>24</processDays>
+						  <efficiency>1</efficiency>
+						</li>
+
+						<li>
+						  <thingDef>MorrowRim_Mazte</thingDef>
+						  <ingredientFilter>
+							  <thingDefs>
+								  <li>MorrowRim_SaltricePrecursor</li>
+							  </thingDefs>
+						  </ingredientFilter>
+						  <maxCapacity>25</maxCapacity>
+						  <processDays>4</processDays>
+						  <efficiency>1</efficiency>
+						</li>
+						
+						<li>
+						  <thingDef>MorrowRim_Shein</thingDef>
+						  <ingredientFilter>
+							  <thingDefs>
+								  <li>MorrowRim_ComberryPrecursor</li>
+							  </thingDefs>
+						  </ingredientFilter>
+						  <maxCapacity>25</maxCapacity>
+						  <processDays>14</processDays>
+						  <efficiency>1</efficiency>
+						</li>
+						
+						<li>
+						  <thingDef>MorrowRim_Sujamma</thingDef>
+						  <ingredientFilter>
+							  <thingDefs>
+								  <li>MorrowRim_WickwheatPrecursor</li>
+							  </thingDefs>
+						  </ingredientFilter>
+						  <maxCapacity>25</maxCapacity>
+						  <processDays>10</processDays>
+						  <efficiency>1</efficiency>
+						</li>
+						
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

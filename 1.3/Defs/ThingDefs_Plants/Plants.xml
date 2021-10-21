@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>MorrowRim_comberry</defName>
+    <label>comberry plant</label>
+    <description>A berry bush that can be harvested for comberry. Comberry can be used in cooking, but is most often used for fermenting shein and greef.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Comberry</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>1.0</fertilitySensitivity>
+      <growDays>8</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>MorrowRim_RawComberry</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <sowMinSkill>3</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~1.05</visualSizeRange>
+      <wildOrder>2</wildOrder>
+	  <immatureGraphicPath>Things/Plant_Immature/Comberry</immatureGraphicPath>
+	  <harvestAfterGrowth>0.30</harvestAfterGrowth>
+	  <harvestMinGrowth>0.80</harvestMinGrowth>
+	  <sowResearchPrerequisites>
+        <li>MorrowRim_BoozeGrowing</li>
+      </sowResearchPrerequisites>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>MorrowRim_saltrice</defName>
+    <label>saltrice plant</label>
+    <description>A rice plant sometimes found natively in the ashlands. Saltrice can be used in cooking, but is most often used for fermenting mazte.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Saltrice</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>1.0</fertilitySensitivity>
+	  <fertilityMin>1.0</fertilityMin>
+      <growDays>2.5</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>MorrowRim_RawSaltrice</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <sowMinSkill>5</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.15~0.8</visualSizeRange>
+	  <immatureGraphicPath>Things/Plant_Immature/Saltrice</immatureGraphicPath>
+      <wildOrder>2</wildOrder>
+	  <wildClusterRadius>2</wildClusterRadius>
+	  <wildClusterWeight>60</wildClusterWeight>
+	  <sowResearchPrerequisites>
+        <li>MorrowRim_BoozeGrowing</li>
+      </sowResearchPrerequisites>
+	  <maxMeshCount>4</maxMeshCount>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>MorrowRim_wickwheat</defName>
+    <label>wickwheat plant</label>
+    <description>A grain plant sometimes found natively in the ashlands. Wickwheat can be used in cooking, but is most often used for fermenting sujamma.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Wickwheat</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>1.0</fertilitySensitivity>
+	  <fertilityMin>0.8</fertilityMin>
+      <growDays>5.5</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>MorrowRim_RawWickwheat</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <sowMinSkill>4</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.5~1.2</visualSizeRange>
+	  <immatureGraphicPath>Things/Plant_Immature/Wickwheat</immatureGraphicPath>
+      <wildOrder>2</wildOrder>
+	  <wildClusterRadius>2</wildClusterRadius>
+	  <wildClusterWeight>60</wildClusterWeight>
+	  <sowResearchPrerequisites>
+        <li>MorrowRim_BoozeGrowing</li>
+      </sowResearchPrerequisites>
+    </plant>
+  </ThingDef>
+  
+</Defs>

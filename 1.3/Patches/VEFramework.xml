@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<!-- Adds in support for VE Framework, allowing you to brew the booze using their item processor -->
+			<li>Vanilla Expanded Framework</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+	
+	
+						<!-- Combination defs -->
+						
+	<ItemProcessor.CombinationDef>
+		<defName>MorrowRim_DagothPrecursorToBrandy</defName>
+		<building>MorrowRim_DunmeriFermentingBarrel</building>
+		<items>
+			<li>MorrowRim_DagothBrandyPrecursor</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>MorrowRim_DagothBrandy_Brewed</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>24</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MorrowRim_SaltricePrecursorToMazte</defName>
+		<building>MorrowRim_DunmeriFermentingBarrel</building>
+		<items>
+			<li>MorrowRim_SaltricePrecursor</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>MorrowRim_Mazte</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>4</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MorrowRim_ComberryPrecursorToShein</defName>
+		<building>MorrowRim_DunmeriFermentingBarrel</building>
+		<items>
+			<li>MorrowRim_ComberryPrecursor</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>MorrowRim_Shein</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>14</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>MorrowRim_WickwheatPrecursorToSujamma</defName>
+		<building>MorrowRim_DunmeriFermentingBarrel</building>
+		<items>
+			<li>MorrowRim_WickwheatPrecursor</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>MorrowRim_Sujamma</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>10</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+						<!-- ItemAccepted defs -->
+						
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_DunmerFermentingBarrelFirstItem</defName>
+		<building>MorrowRim_DunmeriFermentingBarrel</building>
+		<slot>1</slot>
+		<items>			
+			<li>MorrowRim_DagothBrandyPrecursor</li>	
+			<li>MorrowRim_SaltricePrecursor</li>			
+			<li>MorrowRim_ComberryPrecursor</li>			
+			<li>MorrowRim_WickwheatPrecursor</li>			
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+						<!-- Building defs -->
+						
+	<ThingDef ParentName="BuildingBase">
+		<defName>MorrowRim_DunmeriFermentingBarrel</defName>
+		<label>Dunmeri fermenting barrel</label>
+		<description>A barrel for fermenting Dunmeri alcoholic beverages.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+		  <texPath>Things/Building/Production/FermentingBarrel</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <damageData>
+			<rect>(0.05,0.1,0.9,0.9)</rect>
+		  </damageData>
+		  <shadowData>
+			<volume>(0.75, 0.35, 0.33)</volume>
+		  </shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<thingCategories>
+		  <li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+		  <WorkToBuild>600</WorkToBuild>
+		  <Mass>10</Mass>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+		  <Steel>10</Steel>
+		  <WoodLog>30</WoodLog>
+		</costList>
+		<comps>
+		  <li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/Production/FermentingBarrel</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>MorrowRim_InsertDunmeriBarrelDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/MorrowRim_ResetPrecursor</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/MorrowRim_EmptyPrecursorIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>MorrowRim_StartInsertionDunmeriBarrel</bringIngredientsText>
+				<bringIngredientsDesc>MorrowRim_StartInsertionDunmeriBarrelDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/MorrowRim_InsertPrecursor</bringIngredientsIcon >
+
+				<cancelIngredientsText>MorrowRim_CancelBringingDunmeriBarrel</cancelIngredientsText> 
+				<cancelIngredientsDesc>MorrowRim_CancelBringingDunmeriBarrelDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/MorrowRim_CancelPrecursor</cancelIngredientsIcon> 
+				<isLightDependingMachine>false</isLightDependingMachine>
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>10</minTemp>
+				<maxTemp>32</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+		  <li>MorrowRim_BoozeMaking</li>
+		</researchPrerequisites>
+		<!-- -->
+		<hasInteractionCell>false</hasInteractionCell>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+	
+					</value>			
+				</li>	
+			
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

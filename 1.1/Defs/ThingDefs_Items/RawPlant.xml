@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>MorrowRim_RawComberry</defName>
+		<label>comberry</label>
+		<description>Raw comberry. Can be fermented into greef and shein or used in cooking.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/MorrowRim_Comberry_raw</texPath>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+		  <foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>12</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>MorrowRim_AshlandsRawPlant</li>
+			<li>DunmerCrop</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>MorrowRim_RawSaltrice</defName>
+		<label>saltrice</label>
+		<description>Raw saltrice. Can be fermented into mazte or used in cooking.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/MorrowRim_Saltrice_raw</texPath>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+		  <foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>30</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>MorrowRim_AshlandsRawPlant</li>
+			<li>DunmerCrop</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>MorrowRim_RawWickwheat</defName>
+		<label>wickwheat</label>
+		<description>Raw wickwheat. Can be fermented into sujamma or used in cooking.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/MorrowRim_Wickwheat_raw</texPath>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+		  <foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>30</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>MorrowRim_AshlandsRawPlant</li>
+			<li>DunmerCrop</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

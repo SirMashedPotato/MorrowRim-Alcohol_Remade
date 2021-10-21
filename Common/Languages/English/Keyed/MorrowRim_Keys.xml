@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+
+	<MorrowRim_InsertDunmeriBarrelDesc>Dunmeri Alcohol Precursor to Insert</MorrowRim_InsertDunmeriBarrelDesc>
+	<MorrowRim_StartInsertionDunmeriBarrel>Bring Dunmeri Alcohol Precursor</MorrowRim_StartInsertionDunmeriBarrel>
+	<MorrowRim_StartInsertionDunmeriBarrelDesc>Bring Dunmeri alcohol precursor to start fermentation rpocess</MorrowRim_StartInsertionDunmeriBarrelDesc>
+	<MorrowRim_CancelBringingDunmeriBarrel>Cancel Bringing Dunmeri Alcohol Precursor</MorrowRim_CancelBringingDunmeriBarrel>
+	<MorrowRim_CancelBringingDunmeriBarrelDesc>Cancel bringing Dunmeri alcohol precursor to the barrel</MorrowRim_CancelBringingDunmeriBarrelDesc>
+
+</LanguageData>

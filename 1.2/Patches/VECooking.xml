@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<RecipeDef>
+							<defName>MorrowRim_WickwheatToFlour</defName>
+							<label>grind wickwheat into flour</label>
+							<description>Grind 10 wickwheat into 15 flour.</description>
+							<jobString>Grinding wickwheat.</jobString>
+							<workSpeedStat>CookSpeed</workSpeedStat>
+							<workSkill>Cooking</workSkill>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_CookMeal</soundWorking>
+							<allowMixingIngredients>true</allowMixingIngredients>
+							<workAmount>200</workAmount>
+							<recipeUsers>
+								<li>VCE_CondimentPrepTable</li>				
+							</recipeUsers>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_RawWickwheat</li>
+								  </thingDefs>
+								</filter>
+								<count>10</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_RawWickwheat</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <VCE_Flour>15</VCE_Flour>
+							</products>
+					</RecipeDef>
+
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

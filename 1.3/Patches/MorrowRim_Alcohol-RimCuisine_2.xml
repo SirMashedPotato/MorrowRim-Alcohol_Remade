@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- provided by baldamundo -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimCuisine 2 Core (Continued)</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_RawSaltrice"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_GrainsRaw</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_RawWickwheat"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_GrainsRaw</li>
+				  </thingCategories>
+				</value>
+			  </li>
+		
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessGrain"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawWickwheat</li>
+					<li>MorrowRim_RawSaltrice</li>
+				</value>
+			  </li>
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessGrain"]/defaultIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawWickwheat</li>
+					<li>MorrowRim_RawSaltrice</li>
+				</value>
+			  </li>
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessGrain"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawWickwheat</li>
+					<li>MorrowRim_RawSaltrice</li>
+				</value>
+			  </li>
+   
+		
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessGrainBulk"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawWickwheat</li>
+					<li>MorrowRim_RawSaltrice</li>
+				</value>
+			  </li>
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessGrainBulk"]/defaultIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawWickwheat</li>
+					<li>MorrowRim_RawSaltrice</li>
+				</value>
+			  </li>
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessGrainBulk"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawWickwheat</li>
+					<li>MorrowRim_RawSaltrice</li>
+				</value>
+			  </li>
+			  </operations>
+  
+		</match>
+	</Operation>
+	
+</Patch>

@@ -37,7 +37,7 @@
 		  <MarketValue>1.1</MarketValue>
 		</statBases>
 		<ingestible>
-		  <foodType>VegetableOrFruit</foodType>
+		  <foodType>Seed</foodType>
 		</ingestible>
 		<comps>
 		  <li Class="CompProperties_Rottable">
@@ -62,7 +62,7 @@
 		  <MarketValue>1.1</MarketValue>
 		</statBases>
 		<ingestible>
-		  <foodType>VegetableOrFruit</foodType>
+		  <foodType>Seed</foodType>
 		</ingestible>
 		<comps>
 		  <li Class="CompProperties_Rottable">

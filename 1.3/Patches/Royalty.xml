@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods> 
+				
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+			<value>
+				<li>MorrowRim_RawComberry</li>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>
+

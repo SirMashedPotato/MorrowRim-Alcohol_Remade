@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>MorrowRim_AchievementsTab</defName>
+							<label>MorrowRim</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementAncientDagothBrandy</defName>
+							<label>A little Taste of the Good Old Times</label>
+							<description>Obtain a bottle of Ancient Dagoth Brandy</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_DagothBrandy</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementAncientDagothBrandy</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- 100 of drinks -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementCyrodiillicBrandy</defName>
+							<label>Collector of Cyrodiilic Brandy</label>
+							<description>Obtain 100 bottles of Cyrodiilic brandy</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_CyrodiilicBrandy</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementCyrodiilicBrandy</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementDagothBrandy</defName>
+							<label>Collector of Dagoth Brandy</label>
+							<description>Obtain 100 bottles of Dagoth brandy</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_DagothBrandy_Brewed</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementDagothBrandy</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementFlin</defName>
+							<label>Collector of Flin</label>
+							<description>Obtain 100 bottles of Flin</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_Flin</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementFlin</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementGreef</defName>
+							<label>Collector of Greef</label>
+							<description>Obtain 100 bottles of Greef</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_Greef</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementGreef</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementMazte</defName>
+							<label>Collector of Mazte</label>
+							<description>Obtain 100 bottles of Mazte</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_Mazte</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementMazte</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementShein</defName>
+							<label>Collector of Shein</label>
+							<description>Obtain 100 bottles of Shein</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_Shein</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementShein</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSujamma</defName>
+							<label>Collector of Sujamma</label>
+							<description>Obtain 100 bottles of Sujamma</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_Sujamma</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSujamma</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

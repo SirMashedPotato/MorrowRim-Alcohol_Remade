@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded - Sushi</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookSushiMealBase"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookSushiMealBase"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookFineSushiMealBase"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookFineSushiMealBase"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookGourmetSushiMealBase"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookGourmetSushiMealBase"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				
+				
+				<!-- Specific -->
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookChirashizushiSimple"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookChirashizushiSimpleBulk"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookNorimakiSimple"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookNorimakiSimpleBulk"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookUramakiFine"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookUramakiFineBulk"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookNigiriFine"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookNigiriFineBulk"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookTemakiLavish"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookTemakiLavishBulk"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookFutomakiLavish"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookFutomakiLavishBulk"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookGunkanmakiGourmet"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookOshizushiiGourmet"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						<li>MorrowRim_RawSaltrice</li>
+
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- provided by baldamundo -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimCuisine 2: Bottling and Booze Expansion (Continued)</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_Sujamma"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_Alcohol</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_Greef"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_Alcohol</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_Mazte"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_Alcohol</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_DagothBrandy"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_Alcohol</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_DagothBrandy_Brewed"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_Alcohol</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_Flin"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_Alcohol</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_Shein"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_Alcohol</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_CyrodiilicBrandy"]</xpath>
+				<value>
+				  <thingCategories>
+					<li>RC2_Alcohol</li>
+				  </thingCategories>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_SaltricePrecursor"]/thingCategories</xpath>
+				<value>
+					<li>RC2_AlcoholPrecursors</li>
+				</value>
+			  </li>
+			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_WickwheatPrecursor"]/thingCategories</xpath>
+				<value>
+					<li>RC2_AlcoholPrecursors</li>
+				</value>
+			  </li>			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_ComberryPrecursor"]/thingCategories</xpath>
+				<value>
+					<li>RC2_AlcoholPrecursors</li>
+				</value>
+			  </li>			  		
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_DagothBrandyPrecursor"]/thingCategories</xpath>
+				<value>
+					<li>RC2_AlcoholPrecursors</li>
+				</value>
+			  </li>
+			  
+			</operations>
+  
+		</match>
+	</Operation>
+	
+</Patch>

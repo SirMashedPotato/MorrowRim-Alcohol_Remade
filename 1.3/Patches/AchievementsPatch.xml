@@ -19,6 +19,21 @@
 							<defName>MorrowRim_AchievementsTab</defName>
 							<label>MorrowRim</label>
 						</AchievementsExpanded.AchievementTabDef>
+											
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementVintageGreef</defName>
+							<label>Legally Gained... of Course</label>
+							<description>Obtain a bottle of Vintage Greef</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_VintageGreef</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementVintageGreef</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
 
 						<AchievementsExpanded.AchievementDef>
 							<defName>MorrowRim_AchievementAncientDagothBrandy</defName>
@@ -34,7 +49,7 @@
 							<texPath>Achievements/MorrowRim_AchievementAncientDagothBrandy</texPath>
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
-						
+
 						<!-- 100 of drinks -->
 						
 						<AchievementsExpanded.AchievementDef>

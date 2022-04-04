@@ -2,12 +2,12 @@
 <Defs>
 
   <ThingDef ParentName="DrugBase">
-    <defName>MorrowRim_CyrodiilicBrandy</defName>
-    <label>fine cyrodiilic brandy</label>
-    <description>A brandy imported from the Empire, aged to perfection. Provides the illusion of enhanced consciousness and reduces tiredness, without the immediate side effects of other Dunmeri alcoholic drinks. As Cyrodiilic brandy is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+    <defName>MorrowRim_VintageGreef</defName>
+    <label>vintage greef</label>
+    <description>Finely aged comberry brandy, quite the find. Consumption provides one with enhanced manipulation, or at least the illusion of it, whilst also draining moving. As greef is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
     <descriptionHyperlinks>
-      <HediffDef>CyrodilBrandyHigh</HediffDef>
-      <HediffDef>AlcoholHigh</HediffDef>
+      <HediffDef>GreefHigh</HediffDef>
+	  <HediffDef>AlcoholHigh</HediffDef>
       <HediffDef>AlcoholTolerance</HediffDef>
       <HediffDef>Hangover</HediffDef>
       <HediffDef>AlcoholAddiction</HediffDef>
@@ -15,7 +15,7 @@
       <HediffDef>ChemicalDamageModerate</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Item/Drug/MorrowRim_CyrodiilicBrandy</texPath>
+      <texPath>Things/Item/Drug/MorrowRim_VintageGreef</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <equippedAngleOffset>-150</equippedAngleOffset>
@@ -45,18 +45,13 @@
       <chairSearchRadius>25</chairSearchRadius>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>CyrodilBrandyHigh</hediffDef>
+          <hediffDef>VintageGreefHigh</hediffDef>
           <severity>0.15</severity>
           <toleranceChemical>Alcohol</toleranceChemical>
         </li>
 		<li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>AlcoholHigh</hediffDef>
           <severity>0.15</severity>
-          <toleranceChemical>Alcohol</toleranceChemical>
-        </li>
-		<li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>0.2</offset>
           <toleranceChemical>Alcohol</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
@@ -105,9 +100,9 @@
   </ThingDef>
 
   <HediffDef>
-    <defName>CyrodilBrandyHigh</defName>
-    <label>cyrodiilic brandy consumption</label>
-    <description>Cyrodiilic brandy in the bloodstream. Provides the illusion of enhanced consciousness and reduces tiredness.</description>
+	<defName>VintageGreefHigh</defName>
+    <label>vintage greef consumption</label>
+    <description>Vintage greef in the bloodstream. Provides the illusion of enhanced manipulation, but drains moving.</description>
     <hediffClass>Hediff_Alcohol</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
@@ -121,11 +116,14 @@
       <stages>
         <li>
           <label>empowered</label>
-		  <restFallFactor>0.8</restFallFactor>
             <capMods>
               <li>
-                <capacity>Consciousness</capacity>
-                <offset>0.2</offset>
+                <capacity>Manipulation</capacity>
+                <offset>0.3</offset>
+              </li>
+              <li>
+                <capacity>Moving</capacity>
+                <offset>-0.3</offset>
               </li>
             </capMods>
         </li>

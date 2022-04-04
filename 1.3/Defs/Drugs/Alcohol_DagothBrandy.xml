@@ -15,7 +15,7 @@
       <HediffDef>ChemicalDamageModerate</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Item/Drug/MorrowRim_DagothBrandy</texPath>
+      <texPath>Things/Item/Drug/MorrowRim_AncientDagothBrandy</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <equippedAngleOffset>-150</equippedAngleOffset>

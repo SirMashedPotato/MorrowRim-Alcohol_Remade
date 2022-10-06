@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>MorrowRim_BoozeGrowing</defName>
+		<label>ashland alcohol-crop growing</label>
+		<description>Allows sowing of comberry, saltrice and wickwheat. These can be refined into specialty Dunmeri alcohol.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>MorrowRim_Tab</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MorrowRim_BoozeMaking</defName>
+		<label>ashland alcohol fermenting</label>
+		<description>Allows the fermenting of certain Dunmeri alcoholic drinks.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>MorrowRim_BoozeGrowing</li>
+			<li>Brewing</li>
+		</prerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>MorrowRim_Tab</tab>
+	</ResearchProjectDef>
+
+</Defs>

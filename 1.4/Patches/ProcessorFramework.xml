@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[SYR] Processor Framework</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- add to fermenter -->
+			
+				<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName = "BarrelProcessor"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+					<value>
+						<li>MorrowRim_DagothBrandy</li>
+						<li>MorrowRim_Mazte</li>
+						<li>MorrowRim_Shein</li>
+						<li>MorrowRim_Sujamma</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+					
+						<ProcessorFramework.ProcessDef>
+							<defName>MorrowRim_DagothBrandy</defName>
+							<thingDef>MorrowRim_DagothBrandy_Brewed</thingDef>
+							<ingredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_DagothBrandyPrecursor</li>
+							  </thingDefs>
+							</ingredientFilter>
+							<processDays>24</processDays>
+							<color>(255, 255, 255)</color>
+						</ProcessorFramework.ProcessDef>
+						
+						<ProcessorFramework.ProcessDef>
+							<defName>MorrowRim_Mazte</defName>
+							<thingDef>MorrowRim_Mazte</thingDef>
+							<ingredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_SaltricePrecursor</li>
+							  </thingDefs>
+							</ingredientFilter>
+							<processDays>4</processDays>
+							<color>(255, 255, 255)</color>
+						</ProcessorFramework.ProcessDef>
+						
+						<ProcessorFramework.ProcessDef>
+							<defName>MorrowRim_Shein</defName>
+							<thingDef>MorrowRim_Shein</thingDef>
+							<ingredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_ComberryPrecursor</li>
+							  </thingDefs>
+							</ingredientFilter>
+							<processDays>14</processDays>
+							<color>(255, 255, 255)</color>
+						</ProcessorFramework.ProcessDef>
+						
+						<ProcessorFramework.ProcessDef>
+							<defName>MorrowRim_Sujamma</defName>
+							<thingDef>MorrowRim_Sujamma</thingDef>
+							<ingredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_WickwheatPrecursor</li>
+							  </thingDefs>
+							</ingredientFilter>
+							<processDays>10</processDays>
+							<color>(255, 255, 255)</color>
+						</ProcessorFramework.ProcessDef>
+					
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

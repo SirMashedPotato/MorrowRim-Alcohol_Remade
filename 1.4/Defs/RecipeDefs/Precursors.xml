@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="MorrowRim_MakePrecursor_Base" Abstract="True">
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+	<researchPrerequisite>MorrowRim_BoozeMaking</researchPrerequisite>
+	<recipeUsers>
+		<li>Brewery</li>
+	</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_MakeDagothBrandyPrecursor</defName>
+    <label>make dagoth brandy precursor</label>
+    <description>Make dagoth brandy precursor from comberry and chemfuel.</description>
+    <jobString>Making dagoth brandy precursor.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_RawComberry</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_RawComberry</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_DagothBrandyPrecursor>5</MorrowRim_DagothBrandyPrecursor>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_MakeDagothBrandyPrecursor_Bulk</defName>
+    <label>make dagoth brandy precursor x4</label>
+    <description>Make dagoth brandy precursor from comberry and chemfuel.</description>
+    <jobString>Making dagoth brandy precursor.</jobString>
+    <workAmount>4000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_RawComberry</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_RawComberry</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_DagothBrandyPrecursor>20</MorrowRim_DagothBrandyPrecursor>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_MakeComberryPrecursor</defName>
+    <label>make comberry precursor</label>
+    <description>Make comberry precursor from comberry.</description>
+    <jobString>Making comberry precursor.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_RawComberry</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_RawComberry</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_ComberryPrecursor>5</MorrowRim_ComberryPrecursor>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_MakeComberryPrecursor_Bulk</defName>
+    <label>make comberry precursor x4</label>
+    <description>Make comberry precursor from comberry.</description>
+    <jobString>Making comberry precursor.</jobString>
+    <workAmount>4000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_RawComberry</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_RawComberry</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_ComberryPrecursor>20</MorrowRim_ComberryPrecursor>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_MakeSaltricePrecursor</defName>
+    <label>make saltrice precursor</label>
+    <description>Make saltrice precursor from saltrice.</description>
+    <jobString>Making saltrice precursor.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_RawSaltrice</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_RawSaltrice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_SaltricePrecursor>5</MorrowRim_SaltricePrecursor>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_MakeSaltricePrecursor_Bulk</defName>
+    <label>make saltrice precursor x4</label>
+    <description>Make saltrice precursor from saltrice.</description>
+    <jobString>Making saltrice precursor.</jobString>
+    <workAmount>4000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_RawSaltrice</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_RawSaltrice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_SaltricePrecursor>20</MorrowRim_SaltricePrecursor>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_MakeWickwheatPrecursor</defName>
+    <label>make wickwheat precursor</label>
+    <description>Make wickwheat precursor from wickwheat.</description>
+    <jobString>Making wickwheat precursor.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_RawWickwheat</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_RawWickwheat</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_WickwheatPrecursor>5</MorrowRim_WickwheatPrecursor>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_MakeWickwheatPrecursor_Bulk</defName>
+    <label>make wickwheat precursor x4</label>
+    <description>Make wickwheat precursor from wickwheat.</description>
+    <jobString>Making wickwheat precursor.</jobString>
+    <workAmount>4000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_RawWickwheat</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_RawWickwheat</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_WickwheatPrecursor>20</MorrowRim_WickwheatPrecursor>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_DistillGreef</defName>
+    <label>distill greef</label>
+    <description>Distill greef from shein.</description>
+    <jobString>Distilling greef.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_Shein</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_Shein</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_Greef>8</MorrowRim_Greef>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MorrowRim_MakePrecursor_Base">
+    <defName>MorrowRim_DistillGreef_Bulk</defName>
+    <label>distill greef x4</label>
+    <description>Distill greef from shein.</description>
+    <jobString>Distilling greef.</jobString>
+    <workAmount>4000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_Shein</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_Shein</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MorrowRim_Greef>32</MorrowRim_Greef>
+    </products>
+  </RecipeDef>
+
+</Defs>

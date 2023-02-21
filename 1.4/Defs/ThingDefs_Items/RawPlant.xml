@@ -22,7 +22,7 @@
 		</comps>
 		<tradeTags>
 			<li>MorrowRim_AshlandsRawPlant</li>
-			<li>DunmerCrop</li>
+			<li>MorrowRim_DunmerBoozeCrop</li>
 		</tradeTags>
 	</ThingDef>
 	
@@ -47,7 +47,7 @@
 		</comps>
 		<tradeTags>
 			<li>MorrowRim_AshlandsRawPlant</li>
-			<li>DunmerCrop</li>
+			<li>MorrowRim_DunmerBoozeCrop</li>
 		</tradeTags>
 	</ThingDef>
 	
@@ -72,7 +72,7 @@
 		</comps>
 		<tradeTags>
 			<li>MorrowRim_AshlandsRawPlant</li>
-			<li>DunmerCrop</li>
+			<li>MorrowRim_DunmerBoozeCrop</li>
 		</tradeTags>
 	</ThingDef>
 

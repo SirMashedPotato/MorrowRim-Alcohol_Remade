@@ -188,6 +188,9 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+	<tradeTags>
+		<li>MorrowRim_DunmerBooze</li>
+	</tradeTags>
   </ThingDef>
  
   <HediffDef>
